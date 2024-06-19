@@ -1,0 +1,332 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/static/css/index.css" />
+    <link rel="icon" href="/static/images/logo_square.png" />
+    <script
+      src="https://kit.fontawesome.com/9687b7dff4.js"
+      crossorigin="anonymous"
+    ></script>
+    <title>grqphical</title>
+  </head>
+  <main class="main">
+    <nav
+      class="navbar is-spaced is-fixed-top"
+      role="navigation"
+      aria-label="main navigation"
+    >
+      <div class="navbar-brand">
+        <a class="navbar-item" href="/">
+          <img class="logo-img" />
+        </a>
+      </div>
+      <div class="navbar-menu is-active" id="navbarMenu">
+        <div class="navbar-end">
+          <a
+            class="navbar-item"
+            onclick="themeChangerCallback(); return false"
+            id="themeToggle"
+            ><i class="fa-solid fa-moon"></i
+          ></a>
+        </div>
+      </div>
+    </nav>
+    <section class="hero is-medium">
+      <div class="hero-body">
+        <p class="title is-size-1">Nathan Jacobson (grqphical)</p>
+        <p class="subtitle is-size-4 hero-subtitle">Self Taught Programmer</p>
+        <div class="socials is-flex is-justify-content-flex-start">
+          <a href="https://github.com/grqphical" class="social-btn"
+            ><i class="fa-brands fa-github is-size-3"></i
+          ></a>
+          <a
+            href="https://www.instagram.com/nathan.jacobson604/"
+            class="social-btn"
+            ><i class="fa-brands fa-instagram is-size-3"></i
+          ></a>
+          <a href="https://twitter.com/grqphical" class="social-btn"
+            ><i class="fa-brands fa-twitter is-size-3"></i
+          ></a>
+        </div>
+        <div class="hero-buttons is-flex is-justify-content-flex-start"></div>
+      </div>
+    </section>
+    <div class="about">
+      <section class="hero" id="about">
+        <div class="hero-body">
+          <p class="title is-size-1">About</p>
+        </div>
+      </section>
+      <div class="content is-flex about is-flex-direction-row about">
+        <div class="quick-info-cards">
+          <div class="card-row">
+            <div class="card">
+              <div class="card-header">
+                <p class="card-header-title">Where I'm From</p>
+              </div>
+              <div class="card-image">
+                <figure class="image is-4by3">
+                  <img
+                    data-trunk="true"
+                    src="/static/images/world_map.svg"
+                    alt="Map of the world with BC highlighted"
+                  />
+                </figure>
+              </div>
+              <div class="card-content">
+                <p><strong>British Columbia, Canada</strong></p>
+              </div>
+            </div>
+            <div class="card">
+              <div class="card-header">
+                <p class="card-header-title">Current Profession</p>
+              </div>
+              <div class="card-content">
+                <p class="profession-icon">
+                  <i class="fa-solid fa-school profession-icon"></i>
+                </p>
+                <p class="profession-text">
+                  <strong>Student, unemployed</strong>
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <div class="card-row">
+            <div class="card">
+              <div class="card-header">
+                <p class="card-header-title">Programming Skills</p>
+              </div>
+              <div class="card-content">
+                <ul>
+                  <li>Python</li>
+                  <li>Rust</li>
+                  <li>Golang</li>
+                  <li>C++</li>
+                  <li>C#/Unity</li>
+                  <li>HTML/CSS</li>
+                  <li>Linux</li>
+                </ul>
+              </div>
+            </div>
+            <div class="card">
+              <div class="card-header">
+                <p class="card-header-title">Non-Programming Skills</p>
+              </div>
+              <div class="card-content">
+                <ul>
+                  <li>3D Animation</li>
+                  <li>Photo Editing</li>
+                  <li>Video Editing</li>
+                  <li>Basic Japanese language abilities</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="about-text">
+          <p>
+            I started programming in 2021 with the Lua programming language
+            however I have learned a lot more since. I mainly develop using
+            Python, Golang, or Rust. I have experience with many other languages
+            and ecosystems than just those three such as C++, C#, and HTML/CSS.
+            I have worked with C++ in the field of robotics on my school's
+            robotics team. I used C++ to program robots that would compete in
+            the VEX VRC competitions. My team ended up ranked 42nd overall in
+            the province of British Columbia. Additionally, I have developed
+            game prototypes using the Unity engine and C#. Although I have never
+            released a full game, those prototypes have taught me valuable
+            information about game development. I also have worked with web
+            technologies such as HTML and CSS extensively developing small
+            websites/web apps to showcase on my portfolio and learn more about
+            website creation.
+          </p>
+          <p>
+            Currently I am a student however once I finish school, I aim to
+            become a backend developer or work in the field of AI. These are the
+            fields that interest me the most as I find artifical intelligence a
+            fascinating subject and enjoy developing systems to process the
+            things we do in the digital world on a daily basis
+          </p>
+        </div>
+      </div>
+    </div>
+    <div class="fixed-grid has-4-cols" id="projects">
+      <div class="hero">
+        <div class="hero-body">
+          <p class="title is-size-1">Projects</p>
+          <p class="subtitle">
+            Here are a few of the projects I am most proud of. You can view the
+            rest on my Github
+          </p>
+        </div>
+      </div>
+      <div class="projects grid">
+        <div class="card project">
+          <div class="card-image">
+            <figure class="image is-4by3">
+              <img src="/static/images/2048.png" class="project-image" />
+            </figure>
+          </div>
+          <div class="card-content">
+            <div class="media">
+              <div class="media-content">
+                <p class="title is-3">2048</p>
+              </div>
+            </div>
+            <div class="content">
+              <br />
+              <a href="https://github.com/grqphical/2048">Learn More</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="card project">
+          <div class="card-image">
+            <figure class="image is-4by3">
+              <img src="/static/images/emoji_game.png" class="project-image" />
+            </figure>
+          </div>
+          <div class="card-content">
+            <div class="media">
+              <div class="media-content">
+                <p class="title is-3">Emoji Game</p>
+              </div>
+            </div>
+            <div class="content">
+              <br />
+              <a href="https://github.com/grqphical/emoji_game">Learn More</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="card project">
+          <div class="card-image">
+            <figure class="image is-4by3">
+              <img src="/static/images/raytracer.png" class="project-image" />
+            </figure>
+          </div>
+          <div class="card-content">
+            <div class="media">
+              <div class="media-content">
+                <p class="title is-3">Raytracer</p>
+              </div>
+            </div>
+            <div class="content">
+              <br />
+              <a href="https://github.com/grqphical/raytracer">Learn More</a>
+            </div>
+          </div>
+        </div>
+        <div class="card project">
+          <div class="card-image">
+            <figure class="image is-4by3">
+              <img
+                src="/static/images/rulers_compendium.png"
+                class="project-image"
+              />
+            </figure>
+          </div>
+          <div class="card-content">
+            <div class="media">
+              <div class="media-content">
+                <p class="title is-3">Civilization VI API</p>
+              </div>
+            </div>
+            <div class="content">
+              <br />
+              <a href="https://github.com/grqphical/rulers-compendium"
+                >Learn More</a
+              >
+            </div>
+          </div>
+        </div>
+
+        <div class="card project">
+          <div class="card-image">
+            <figure class="image is-4by3">
+              <img src="/static/images/stockcord.png" class="project-image" />
+            </figure>
+          </div>
+          <div class="card-content">
+            <div class="media">
+              <div class="media-content">
+                <p class="title is-3">Stockcord</p>
+              </div>
+            </div>
+            <div class="content">
+              <br />
+              <a href="https://github.com/grqphical/stock_bot">Learn More</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="card project">
+          <div class="card-image">
+            <figure class="image is-4by3">
+              <img src="/static/images/vsscope.png" class="project-image" />
+            </figure>
+          </div>
+          <div class="card-content">
+            <div class="media">
+              <div class="media-content">
+                <p class="title is-3">VSScope</p>
+              </div>
+            </div>
+            <div class="content">
+              <br />
+              <a href="https://github.com/grqphical/vsscope">Learn More</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="card project">
+          <div class="card-image">
+            <figure class="image is-4by3">
+              <img src="/static/images/argon.png" class="project-image" />
+            </figure>
+          </div>
+          <div class="card-content">
+            <div class="media">
+              <div class="media-content">
+                <p class="title is-3">Argon Calculator</p>
+              </div>
+            </div>
+            <div class="content">
+              <br />
+              <a href="https://github.com/grqphical/argon">Learn More</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="card project">
+          <div class="card-image">
+            <figure class="image is-4by3">
+              <img src="/static/images/aim_trainer.png" class="project-image" />
+            </figure>
+          </div>
+          <div class="card-content">
+            <div class="media">
+              <div class="media-content">
+                <p class="title is-3">Aim Trainer</p>
+              </div>
+            </div>
+            <div class="content">
+              <br />
+              <a href="https://github.com/grqphical/Aim-Trainer">Learn More</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <footer class="footer">
+      <div class="content has-text-centered">
+        <p>© Copyright 2024 Nathan Jacobson.</p>
+      </div>
+    </footer>
+  </main>
+  <script src="/static/js/index.js"></script>
+  <script src="/static/js/navbar.js"></script>
+</html>
