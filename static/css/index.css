@@ -2,6 +2,15 @@
 
 body {
   min-height: 100vh;
+  background-attachment: fixed;
+}
+
+[data-theme="dark"] body {
+  background-image: url("/static/images/background_dark.svg");
+}
+
+[data-theme="light"] body {
+  background-image: url("/static/images/background_light.svg");
 }
 
 [data-theme="dark"] .logo-img {
