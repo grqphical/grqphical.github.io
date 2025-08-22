@@ -11,3 +11,5 @@ when you can use a chat app like Discord.
 - Chatting with chat history
 - Ability to compare two LLM's responses side by side
 - Easy way to view your configured models in Discord
+
+You can learn more at the projects [repo](https://github.com/grqphical/llmcord)
