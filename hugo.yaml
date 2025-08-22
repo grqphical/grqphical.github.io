@@ -1,0 +1,32 @@
+baseURL: https://example.org/
+languageCode: en-us
+title: Nathan Jacobson
+theme: PaperMod
+
+params:
+  profileMode:
+    enabled: true
+    subtitle: "Computer Science Student"
+    imageUrl: "profile.jpg" # optional
+    imageWidth: 200
+    imageHeight: 200
+  socialIcons:
+    - name: "Github"
+      url: "https://github.com/grqphical"
+    - name: "Twitter"
+      url: "https://x.com/grqphical"
+    - name: "itchio"
+      url: "https://grqphical.itch.io"
+
+languages:
+  en:
+    languageName: "English"
+    weight: 1
+    menu:
+      main:
+        - name: About
+          url: about
+          weight: 5
+        - name: Projects
+          url: projects
+          weight: 10
