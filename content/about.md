@@ -28,9 +28,10 @@ Besides programming, I have a 1st degree black belt in Tae Kwon Do, I am an avid
 
 ### Programming Skills
 
-- Golang
-- Python
+- Golang 💪
+- Python 💪
 - Lua
+- C++
 - HTML/CSS/JS
 - SQL
 - Linux
