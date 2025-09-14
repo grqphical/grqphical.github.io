@@ -6,7 +6,7 @@ theme: PaperMod
 params:
   profileMode:
     enabled: true
-    subtitle: "Computer Science Student"
+    subtitle: "Computing Science student at Simon Fraser University"
     imageUrl: "profile.jpg" # optional
     imageWidth: 200
     imageHeight: 200

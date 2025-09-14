@@ -7,15 +7,21 @@ I have been programming since 2020 where I started out making Roblox games with 
 Ever since then I have continued to expand my knowledge of programming with things such as teaching myself new programming skills, 
 programming for a VEX VRC Robotics Team (where we placed 42nd out of over 1000 teams), and building projects on my own.
 
-Besides programming, I have a 1st degree black belt in Tae Kwon Do, I am an avid video game enjoyer, and I love watching the Vancouver Canucks (or just hockey in general)
+Besides programming, I have a 1st degree black belt in Tae Kwon Do, I am an avid video game enjoyer, and I love watching the Vancouver Canucks (or just hockey in general) and the Toronto Blue Jays
 
 ## Education
 
-**Simon Fraser University - Bachelor of Computer Science**, September 2025-Present
+**Simon Fraser University - Bachelor of Science, Major in Computing Science**, September 2025-Present
 
 **Heritage Woods Secondary School - BC High School Diploma**, September 2021-June 2025
 
 ## Work Experience
+
+**Instructor - Transceneding Martial Arts**, September 2025-Present
+
+- Taught children aged 4-14 Tae Kwon do skills including strikes, kicks, patterns, and weapons
+- Managed a group of volunteer assistants to assist with class management and lessons
+
 
 **Information Officer - Elections Canada**, April 2025
 
