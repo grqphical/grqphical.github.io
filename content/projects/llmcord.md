@@ -1,6 +1,8 @@
-+++
-title = 'LLMCord'
-+++
+---
+title: "LLMCord"
+cover:
+    image: "/llmcord.png"
+---
 
 LLMCord is a self-hosted Discord bot I wrote to interact with LLM's such as Llama, ChatGPT, or Claude. Why use a whole web interface to talk to LLMs 
 when you can use a chat app like Discord.
