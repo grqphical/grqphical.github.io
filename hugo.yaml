@@ -32,11 +32,11 @@ languages:
         - name: Projects
           url: projects
           weight: 10
-        - name: Tags
-          url: tags
-          weight: 12
         - name: Posts
           url: posts
           weight: 15
+        - name: Resume
+          url: resume.pdf
+          weight: 20
 
     
