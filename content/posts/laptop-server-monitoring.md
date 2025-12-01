@@ -15,7 +15,7 @@ Time to add a monitoring service, preferably with a web interface.
 
 ## dash
 
-Looking through [awesome-selfhosted](https://github.com/awesome-selfhosted/awesome-selfhosted) (great resource, highly reccomend for anyone looking for things to run on their home server) I found
+Looking through [awesome-selfhosted](https://github.com/awesome-selfhosted/awesome-selfhosted) (great resource, highly recommend for anyone looking for things to run on their home server) I found
 a project called [dash](https://getdashdot.com/), a ligthweight web app that allows you to remotely monitor your server.
 
 ![dash interface](https://getdashdot.com/img/screenshot_darkmode.png)

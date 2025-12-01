@@ -15,8 +15,8 @@ params:
       url: "https://github.com/grqphical"
     - name: "Twitter"
       url: "https://x.com/grqphical"
-    - name: "itchio"
-      url: "https://grqphical.itch.io"
+    - name: "LinkedIn"
+      url: https://www.linkedin.com/in/nathan-jacobson-9ba688392/
 
 languages:
   en:
