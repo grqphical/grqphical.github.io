@@ -17,52 +17,27 @@ In order to create a file server that can be easily accessed from Windows, MacOS
 
 And oh my god does it make it easy for you. All I had to do basically install it, make a folder, change some permissions, edit one config file, and run it. Then boom, I now have a file server I can store/retrieve files from.
 
-Heres exactly what I did to set it up:
+And it worked, at least on my home network. I brought it back to my dorm and I couldn't connect to it. Turns out my university blocks internal network connections on any port that isn't HTTP/HTTPS or SSH.
 
-1. Installed samba:
+## No need to fear WebDAV is to the rescue
 
-```bash
-sudo apt update
-sudo install samba -y
-```
+After doing some research I learned that there exists a protocol that works on top of HTTP called WebDAV that integrates with Windows File Explorer, similar to samba. The best part is that you can create a
+WebDAV server with nginx or apache, they have that functionality with a plugin.
 
-2. Create the directory to store the files
+I installed nginx and the WebDAV plugin, setup the configuration and tried to connect to it on my laptop.
 
-It's easiest to store it in samba's `srv` directory, but theoretically you could store it anywhere
+It failed. Nothing ever works the first try.
 
-```bash
-sudo mkdir -p /srv/samba/file-server
+I uninstalled nginx and tried it with apache and still no luck.
 
-sudo chown -R user:user /srv/samba/file-server
-sudo chmod -R 0775 /srv/samba/file-server
-```
+## The next best thing
 
-3. Edit the config file
+Since HTTP works on the dorm network but WebDAV and Samba don't, I figured that an app that used a browser interface to read/write files would be the only way to get file sharing to work on the server.
 
-Open `/etc/samba/samba.conf` (make sure you do this with `sudo`) and paste this in
+I found this project called [Filebrowser](https://filebrowser.org/) that runs off a single Docker image and hosts a web app with an interface similar to Google Drive
+![Filebrowser UI](https://filebrowser.org/static/example.gif)
+*Source: https://filebrowser.org/*
 
-```toml
-[ShareName]
-   comment = My Shared Folder
-   path = "/srv/samba/file-server"
-   browseable = yes
-   writable = yes
-   guest ok = no
-   valid users = user
-   create mask = 0664
-   directory mask = 0775
-```
+I downloaded the Docker image, spun it up and it works. I can finally use my server for storing files, even if it isn't as easy as having it mapped in File Explorer.
 
-4. Create a samba user:
-
-```bash
-sudo smbpasswd -a user
-```
-
-5. Finally restart the service
-
-```bash
-sudo systemctl restart smbd
-```
-
-Now you can connect to it from almost any device. On Windows you'll have to open Explorer, right click on This PC, click `Add a Network Location`, go through the prompts, then enter `\\yourserver'sIP\yoursharename` for the address, login with your username and password you set in step 4, and you can now access it.
+It works across all devices, even my phone, and is super lightweight.
