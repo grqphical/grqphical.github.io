@@ -27,4 +27,4 @@ And it has a Docker image so setup/install is super easy. Once I got the image a
 
 ## The new problem
 
-I now have multiple HTTP servers running on my server, but since I can only use port 80, I can only have one active at the same time. So next article I'll be setting up a reverse proxy
+I now have multiple HTTP servers running on my server, but since I can only use port 80, I can only have one active at the same time.
