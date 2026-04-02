@@ -18,6 +18,7 @@ params:
       url: "https://x.com/grqphical"
     - name: "LinkedIn"
       url: https://www.linkedin.com/in/nathan-jacobson-9ba688392/
+  author: "Nathan Jacobson"
 
 languages:
   en:
