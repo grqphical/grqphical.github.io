@@ -53,7 +53,7 @@ Wait three seconds and then remove the jumper
 To verify that the Jetson is in recovery mode (if you are on Linux) open a terminal and run the command `lsusb`, if there is an entry that contains something like `NVIDIA AGX`, the Jetson is in recovery mode.
 
 ## Step 2: Flash the Jetson
-Open the NVIDIA SDK Manager and login to your own NVIDIA account or the club account
+Open the NVIDIA SDK Manager and login to your NVIDIA account
 
 There should be a popup saying that the board was detected and two options are given, choose the one that has `Developer Kit` in the name.
 
