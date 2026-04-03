@@ -65,7 +65,7 @@ Click the continue button, you will now be on a screen that looks like this (If 
 
 Accept the terms and conditions, then click the big green continue button.
 
-It may prompt you during the installation to set a username and password, please consult an executive before doing so.
+It may prompt you during the installation to set a username and password, this will be what is used to login to the Jetson
 
 Once the installation is finished, it is safe to close the SDK manager and unplug the Jetson.
 
