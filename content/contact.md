@@ -2,8 +2,8 @@
 title = "Contact"
 layout = "contact"
 +++
-### Get In Touch With Me
+If you would like to get in touch with me or just want to say hello, feel free to send me an email:
 
-Send me an email: [nathan@nathanjacobson.ca](mailto:nathan@nathanjacobson.ca)
+[nathan@nathanjacobson.ca](mailto:nathan@nathanjacobson.ca)
 
-Message me on [LinkedIn](https://www.linkedin.com/in/nathan-jacobson-9ba688392/)
+If you don't get a response right away, your message may have gone to my spam folder and I only check that every couple of weeks.
