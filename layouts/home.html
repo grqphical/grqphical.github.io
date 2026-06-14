@@ -1,6 +1,29 @@
 {{ define "main" }}
-<p>I am a software developer currently pursuing a Computing Science degree at Simon Fraser University</p>
-<p>This is my personal site where I share cool projects I am building and make posts about my experiences in programming</p>
+{{ $img := resources.Get "img/headshot.jpg" }}
+{{ $img = $img.Resize "512x512 webp q85" }}
+<style>
+.home-container {
+    margin-top: 4em;
+    display: flex;
+    flex-direction: row;
+    gap: 2em;
+    align-items: center;
+}
 
-<p class="jetbrains-mono">[<a href="https://github.com/grqphical">github</a>,<a href="">linkedin<a>]</p>
+.headshot {
+    width: 12em;
+    height: 12em;
+    border-radius: 1em;
+}
+</style>
+<div class="home-container">
+    <img src="{{ $img.RelPermalink }}" class="headshot" />
+    <div>
+        <p>I am a software developer currently pursuing a Computing Science degree at Simon Fraser University</p>
+        <p>This is my personal site where I share cool projects I am building and make posts about my experiences in programming. I also 
+        have some of my photography work posted here.</p>
+
+        <p class="jetbrains-mono">[<a href="https://github.com/grqphical">github</a>,<a href="">linkedin</a>]</p>
+    </div>
+</div>
 {{ end }}
