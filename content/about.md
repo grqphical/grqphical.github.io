@@ -10,8 +10,8 @@ video games (most likely Civilization VI), preparing for my next Dungeons and Dr
 My main areas of focus in computer science are backend development and systems programming, however recently I have been dabbling with a little
 bit of machine learning and artificial intelligence.
 
-Currently I am a Software Developer for the [SFU Racerbot](https://sfuracerbot.ca) design team. We are building 1/10th autonomous scale race cars
-using NVIDIA Jetsons, CUDA, and ROS2. My role is to help develop the firmware to ensure that all the components of the car can communicate
+Currently I am a Software Developer for the [SFU Racerbot](https://sfuracerbot.ca) design team. We are building 1/10th scale autonomous race cars
+using NVIDIA Jetsons, C++, CUDA, and ROS2. My role is to help develop the firmware to ensure that all the components of the car can communicate
 with each other efficiently and reliably. I also built the team's website.
 
 ### Skills
