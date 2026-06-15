@@ -1,0 +1,40 @@
+{{define "main"}}
+<style>
+.photo-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 1rem;
+    margin-bottom: 4em;
+}
+
+.photo-item img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+
+.no-underline {
+    border-bottom: 0px !important;
+}
+</style>
+
+<h2>Photos</h2>
+<p>Here are some of the photos I've captured on my Canon EOS Rebel T1i DSLR camera. If you want to see one in more detail, just click on it</p>
+<p>I also post my work on my photography instagram account <a href="https://www.instagram.com/njacobsonphotography/">@njacobsonphotography</a></p>
+
+<div class="photo-grid">
+  {{ range .Resources.ByType "image" }}
+    {{ $img := .Resize "1024x" }}
+    {{ $thumb := .Fill "800x1000" }}
+    <a href="{{ $img.RelPermalink }}" class="photo-item no-underline">
+      <img
+        src="{{ $thumb.RelPermalink }}"
+        alt="{{ .Title }}"
+        loading="lazy"
+      >
+    </a>
+  {{ end }}
+</div>
+
+{{end}}
