@@ -1,0 +1,47 @@
+{{ $projects := site.GetPage "projects" }}
+
+{{ if $projects }}
+<link rel="stylesheet" href="/css/projects.css">
+
+<section class="projects-section">
+  <h2>Current Projects</h2>
+  <div class="project-grid">
+
+    {{ range where $projects.Pages "File.Base" "ne" "_index" }}
+    <div class="project-card">
+
+      {{ with .Params.cover }}
+        {{ with resources.Get . }}
+          {{ $cover := .Resize "500x webp" }}
+          <div class="project-cover">
+            <img src="{{ $cover.RelPermalink }}"
+                 width="{{ $cover.Width }}"
+                 height="{{ $cover.Height }}"
+                 alt="{{ $.Title }} cover image"
+                 loading="lazy">
+          </div>
+        {{ end }}
+      {{ end }}
+
+      <h2 class="project-title">
+        <a href="{{ .Params.github }}" target="_blank" rel="noopener">
+          {{ .Title }}
+        </a>
+      </h2>
+
+      {{ with .Params.tags }}
+        <div class="project-tags">
+          {{ range . }}
+            <code>{{ . }}</code>
+          {{ end }}
+        </div>
+      {{ end }}
+
+      <p>{{ .Params.description }}</p>
+
+    </div>
+    {{ end }}
+
+  </div>
+</section>
+{{ end }}

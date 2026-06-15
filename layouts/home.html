@@ -9,10 +9,12 @@
 <div class="home-container">
     <img src="{{ $img.RelPermalink }}" class="headshot" />
     <div>
-        <p>I am a software developer currently pursuing a Computing Science degree at Simon Fraser University</p>
+        <p><strong>I am a software developer currently pursuing a Computing Science degree at Simon Fraser University</strong></p>
         <p>Here I share cool projects I am building and make posts about my experiences in programming. I also 
         have some of my photography work posted here.</p>
+        
 
     </div>
 </div>
+{{ partial "projects.html" . }}
 {{ end }}
