@@ -11,6 +11,21 @@
     <link rel="stylesheet" href="/css/jetbrains-mono.css">
     <link rel="stylesheet" href="/css/index.css">
 
+
+    {{ $og_img := resources.Get "img/headshot.jpg" }}
+    {{ $og_img = $og_img.Resize "512x512 webp q85" }}
+
+    <meta property="og:title" content="{{ if .Title }}{{ .Title }}{{ else }}{{ .Site.Title }}{{ end }}" />
+    <meta property="og:description" content="{{ if .Params.description }}{{ .Params.description }}{{ else }}{{ .Site.Params.description }}{{ end }}" />
+    <meta property="og:url" content="{{ .Permalink }}" />
+    <meta property="og:image" content="{{ $og_img.Permalink }}" />
+    <meta property="og:type" content="{{ if .IsHome }}website{{ else }}article{{ end }}" />
+    <meta property="og:site_name" content="{{ .Site.Title }}" />
+
+    <meta name="twitter:title" content="{{ .Title }}" />
+    <meta name="twitter:description" content="{{ if .Params.description }}{{ .Params.description }}{{ else }}{{ .Site.Params.description }}{{ end }}" />
+    <meta name="twitter:image" content="{{ $og_img.Permalink }}" />
+
     {{ block "head" . }}
     {{ end }}
 

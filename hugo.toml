@@ -1,3 +1,6 @@
 baseURL = 'https://nathanjacobson.ca/'
 locale = 'en-ca'
 title = 'Nathan Jacobson'
+
+[params]
+  description = "Software Developer - Photographer"
