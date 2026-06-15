@@ -1,17 +1,24 @@
 +++
-title = 'About Me'
+title = "About Me"
+layout = "about"
 +++
+## About Me
+I am a software developer from Vancouver, British Columbia, Canada currently pursuing my Bachelors of Science in Computing Science at Simon Fraser University. I primarily
+focus on backend development and systems programming, however recently I have been dabbling with a little bit of machine learning and artificial intelligence. My main
+language is Golang, with Python being a close second.
 
-Hi there! My name is Nathan and I am currently a student at Simon Fraser University studying Computer Science. 
-I have been programming since 2020 where I started out making Roblox games with Lua. 
-Ever since then I have continued to expand my knowledge of programming with things such as teaching myself new programming skills, 
-programming for a VEX VRC Robotics Team (where we placed 42nd out of over 1000 teams), and building projects on my own.
+Currently I am a Software Developer for the [SFU Racerbot](https://sfuracerbot.ca) design team. We are building 1/10th scale autonomous race cars
+using NVIDIA Jetsons, C++, CUDA, and ROS2. My role is to help develop the firmware to ensure that all the components of the car can communicate
+with each other efficiently and reliably. I also built the team's website using Hugo, HTML, and TailwindCSS.
 
-Currently I am a programmer for the SFU RoboRacer Design Team. We are currently building a robot to participate in [RoboRacer (formerly F1-Tenth)](https://f1tenth.github.io/about.html), 
-an international autonomous racing community and educational program created by the University of Pennsylvania. Our goal is to build a fully autonomous 1/10 scale robotic car powered
-by an NVIDIA Jetson GPU and multiple sensors.
+Outside of programming, I have a 1st Dan Black Belt in Tae Kwon Do and have been training consistently since 2017. I am a huge nerd who loves video games
+(especially strategy games; I love a good Civilization VI campaign), Dungeons and Dragons, and the Vancouver Canucks.
 
-Besides programming, I have a 1st degree black belt in Tae Kwon Do, I am an avid video game enjoyer, and I love watching the Vancouver Canucks (or just hockey in general) and the Toronto Blue Jays
-## Contact Me
 
-If you want to ask me a question or just say hi feel free to send me an email: [contact@nathanjacobson.ca](mailto:contact@nathanjacobson.ca)
+### Skills
+Programming Languages: `Python` `Go` `C/C++` `Lua` `SQL` `HTML/CSS/JS`
+
+Libraries/Frameworks: `pandas` `FastAPI` `SQLite` `Vue.js` `ROS2`
+
+Tools: `Linux` `Docker` `Neovim` `tmux`
+

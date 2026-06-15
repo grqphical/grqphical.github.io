@@ -1,0 +1,61 @@
+{{ define "head" }}
+<link rel="stylesheet" href="/css/single.css">
+{{ end }}
+
+{{ define "main" }}
+<article class="post">
+
+  <header class="post-header">
+    {{ if .Params.thumbnail }}
+    <div class="post-cover">
+      <img src="{{ .Params.thumbnail }}" alt="{{ .Title }}">
+    </div>
+    {{ end }}
+
+    <h1 class="post-title">{{ .Title }}</h1>
+
+    <div class="post-info">
+      <time datetime="{{ .Date.Format "2006-01-02" }}" class="jetbrains-mono">
+        {{ .Date.Format "January 2, 2006" }}
+      </time>
+      <span class="divider jetbrains-mono">·</span>
+      <span class="jetbrains-mono">&nbsp;{{ .ReadingTime }} min read</span>
+      {{ with .Params.author }}
+      <span class="divider jetbrains-mono">·</span>
+      <span class="jetbrains-mono"&nbsp; >by {{ . }}</span>
+      {{ end }}
+    </div>
+  </header>
+
+  <div class="post-body">
+    {{ .Content }}
+  </div>
+
+  <footer class="post-footer">
+    {{ if .Params.tags }}
+    <div class="post-tags">
+      <strong>Tags:</strong>
+      {{ range .Params.tags }}
+      <a href="/tags/{{ . | urlize }}" class="tag">{{ . }}</a>
+      {{ end }}
+    </div>
+    {{ end }}
+
+    <nav class="post-nav">
+      {{ with .PrevInSection }}
+      <a class="post-nav-link post-nav-link--prev" href="{{ .Permalink }}">
+        <span>← Previous</span>
+        <strong>{{ .Title }}</strong>
+      </a>
+      {{ end }}
+      {{ with .NextInSection }}
+      <a class="post-nav-link post-nav-link-next" href="{{ .Permalink }}">
+        <span>Next →</span>
+        <strong>{{ .Title }}</strong>
+      </a>
+      {{ end }}
+    </nav>
+  </footer>
+
+</article>
+{{ end }}

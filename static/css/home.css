@@ -1,0 +1,20 @@
+.home-container {
+    margin-top: 4em;
+    margin-bottom: 8em;
+    display: flex;
+    flex-direction: row;
+    gap: 2em;
+    align-items: center;
+}
+
+.headshot {
+    width: 12em;
+    height: 12em;
+    border-radius: 1em;
+}
+
+@media screen and (max-width: 1200px) {
+    .home-container {
+        flex-direction: column;
+    }
+}
