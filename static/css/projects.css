@@ -22,3 +22,10 @@
     margin-top: 0.25em;
     margin-bottom: 0;
 }
+
+@media screen and (max-width: 1200px) {
+    .project-grid {
+        display: flex;
+        flex-direction: column;
+    }
+}

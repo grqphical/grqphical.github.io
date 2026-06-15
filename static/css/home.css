@@ -12,3 +12,9 @@
     height: 12em;
     border-radius: 1em;
 }
+
+@media screen and (max-width: 1200px) {
+    .home-container {
+        flex-direction: column;
+    }
+}
