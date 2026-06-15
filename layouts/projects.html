@@ -1,0 +1,44 @@
+{{ define "head" }}
+<link rel="stylesheet" href="/css/projects.css">
+{{ end }}
+
+{{ define "main" }}
+<h2>Current Projects</h2>
+
+<div class="project-grid">
+{{ range where .Pages "File.Base" "ne" "_index" }}
+<div class="project-card">
+    {{ with .Params.cover }}
+      {{ with resources.Get . }}
+        {{ $cover := .Resize "500x" }}
+        <div class="project-cover">
+          <img src="{{ $cover.RelPermalink }}" 
+               width="{{ $cover.Width }}"
+               height="{{ $cover.Height }}"
+               alt="{{ $.Title }} cover image"
+               loading="lazy"
+               class="project-cover">
+        </div>
+      {{ end }}
+    {{ end }}
+    <h2 class="project-title">
+        <a href="{{ .Params.github }}" target="_blank" rel="noopener">
+            {{ .Title }}
+        </a>
+    </h2>
+    
+    {{ with .Params.tags }}
+    <div class="project-tags">
+        {{ range . }}
+        <code>{{ . }}</code>
+        {{ end }}
+    </div>
+    {{ end }}
+
+    <p>{{ .Params.description }}</p>
+    
+</div>
+{{ end }}
+</div>
+
+{{ end }}
