@@ -11,3 +11,22 @@
 .orange:visited {
     color: oklch(76.9% 0.188 70.08);
 }
+
+html,
+body {
+    height: 100%;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+main {
+    flex: 1;
+}
+
+footer {
+    margin-top: auto;
+}

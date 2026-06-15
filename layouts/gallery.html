@@ -1,23 +1,8 @@
-{{define "main"}}
-<style>
-.photo-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
-    gap: 1rem;
-    margin-bottom: 4em;
-}
+{{ define "head" }}
+<link rel="stylesheet" href="/css/gallery.css">
+{{ end }} 
 
-.photo-item img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    display: block;
-}
-
-.no-underline {
-    border-bottom: 0px !important;
-}
-</style>
+{{ define "main" }}
 
 <h2>Photos</h2>
 <p>Here are some of the photos I've captured on my Canon EOS Rebel T1i DSLR camera. If you want to see one in more detail, just click on it</p>

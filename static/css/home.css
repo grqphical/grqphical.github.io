@@ -1,0 +1,13 @@
+.home-container {
+    margin-top: 4em;
+    display: flex;
+    flex-direction: row;
+    gap: 2em;
+    align-items: center;
+}
+
+.headshot {
+    width: 12em;
+    height: 12em;
+    border-radius: 1em;
+}
