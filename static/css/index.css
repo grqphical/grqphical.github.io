@@ -1,0 +1,13 @@
+.orange {
+    color: oklch(76.9% 0.188 70.08);
+    border-bottom-color: oklch(76.9% 0.188 70.08);
+}
+
+.orange:hover {
+    color: oklch(70.9% 0.188 70.08);
+    border-bottom-color: oklch(70.9% 0.188 70.08);
+}
+
+.orange:visited {
+    color: oklch(76.9% 0.188 70.08);
+}
