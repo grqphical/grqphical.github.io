@@ -8,8 +8,7 @@ focus on backend development and systems programming, however recently I have be
 language is Golang, with Python being a close second.
 
 Currently I am a Software Developer for the [SFU Racerbot](https://sfuracerbot.ca) design team. We are building 1/10th scale autonomous race cars
-using NVIDIA Jetsons, C++, CUDA, and ROS2. My role is to help develop the firmware to ensure that all the components of the car can communicate
-with each other efficiently and reliably. I also built the team's website using Hugo, HTML, and TailwindCSS.
+using NVIDIA Jetsons, C++, CUDA, and ROS2. My role is to help develop pathfinding algorithims to allow the car to swiftly navigate any course, without the car crashing. I also built the team's website using Hugo, HTML, and TailwindCSS.
 
 Outside of programming, I have a 1st Dan Black Belt in Tae Kwon Do and have been training consistently since 2017. I am a huge nerd who loves video games
 (especially strategy games; I love a good Civilization VI campaign), Dungeons and Dragons, and the Vancouver Canucks.
