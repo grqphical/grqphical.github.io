@@ -26,3 +26,19 @@
     flex-direction: row;
     gap: 0.5rem;
 }
+
+.about-header {
+    display: flex;
+    flex-direction: row;
+    gap: 3rem;
+    align-items: center;
+}
+
+.headshot {
+    margin-bottom: 0;
+    max-width: 343px;
+}
+
+.headshot-caption {
+    font-size: 1.5rem;
+}

@@ -1,0 +1,9 @@
+<div class="about-header">
+    {{ $img := resources.Get "img/nathan-portrait.jpg" }}
+    {{ $img = $img.Resize "343x webp q85" }}
+    <img src="{{ $img.RelPermalink }}" class="headshot" />
+    
+    <div>
+        {{.Inner | .Page.RenderString}}
+    </div>
+</div>
