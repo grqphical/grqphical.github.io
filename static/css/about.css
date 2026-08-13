@@ -1,0 +1,28 @@
+.education-entry {
+    display: flex;
+    flex-direction: column;
+}
+
+.school-info {
+    display: flex;
+    flex-direction: row;
+    gap: 0.5rem;
+}
+
+.education-location {
+    margin-bottom: 0;
+}
+
+.education-duration {
+    margin-bottom: 0;
+}
+
+.education-description {
+    margin-top: 0.5rem;
+}
+
+.experience-info {
+    display: flex;
+    flex-direction: row;
+    gap: 0.5rem;
+}

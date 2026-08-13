@@ -1,0 +1,13 @@
+<div class="education-entry">
+    <div class="school-info">
+        <b>{{ ($.Get "school") }},</b>
+        <p class="education-location">{{ ($.Get "location") }},</p>
+        <p class="education-duration">({{ ($.Get "duration") }})</p>
+    </div>
+    
+    <i>{{ ($.Get "degree") }}</i>
+    <div class="education-description">
+        {{.Inner | .Page.RenderString}}
+    </div>
+    
+</div>
