@@ -11,3 +11,10 @@
     font-weight: 600;
     font-style: normal;
 }
+
+.jetbrains-mono-italic {
+    font-family: "JetBrains Mono", monospace;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: italic;
+}
