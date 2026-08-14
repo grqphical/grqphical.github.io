@@ -1,6 +1,7 @@
 +++
 title = "About Me"
 layout = "about"
+description = "I am a software developer from Vancouver, British Columbia, Canada currently pursuing my Bachelors of Science in Computing Science at Simon Fraser University"
 +++
 ## About Me
 {{<about-header>}}
@@ -70,3 +71,6 @@ Programming Languages: `Python` `Go` `C/C++` `Lua` `SQL` `HTML/CSS/JS`
 Libraries/Frameworks: `pandas` `FastAPI` `SQLite` `Vue.js` `ROS2`
 
 Tools: `Linux` `Docker` `Neovim` `tmux`
+
+## Contact
+If you would like to get in touch with me or just want to say hello, feel free to send me an email: [nathan@nathanjacobson.ca](mailto:nathan@nathanjacobson.ca)
