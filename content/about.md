@@ -27,16 +27,6 @@ Outside of programming, I have a 1st Dan Black Belt in Tae Kwon Do and have been
 - Activities and Societies: Computing Science Student Society, SFU Racerbot, SFU Astronomy Club, SFU Surge
 {{</education>}}
 
-{{< education 
-    school="Heritage Woods Secondary School" 
-    degree="Dogwood Diploma (High School Diploma)" 
-    location="Port Moody, BC" 
-    duration="2021 - 2025" 
->}}
-- Activities and Societies: Heritage Woods Model United Nations, Syntechs Robotics
-- Awarded Top Producing Grade 12 Student and the British Columbia Achievement Scholarship
-{{</education>}}
-
 ## Work Experience
 {{< work-experience
     title="Software Developer"
